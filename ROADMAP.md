@@ -1,92 +1,104 @@
-# ROADMAP - Projet Claude-Nexus
+# ROADMAP - Claude Nexus
 
-## Vue d'ensemble
-Ce document présente la feuille de route du projet Claude-Nexus, un système d'orchestration d'IA avec mémoire persistante et capacités autonomes. La roadmap est organisée en phases, chacune comportant plusieurs étapes avec des tâches spécifiques.
+## Vision du projet
 
-## Phase 1: Fondations (Semaines 1-3)
-Établir l'infrastructure de base et clarifier la vision du projet.
+Claude Nexus vise à créer un écosystème d'IA orchestré et doté d'une mémoire persistante, permettant une collaboration intelligente entre différents agents IA avec des niveaux d'autonomie définis.
 
-### Étape 1.1: Configuration et documentation initiale
-- [x] Créer le dépôt GitHub "claude-nexus"
-- [x] Structurer les dossiers principaux (docs, memory, protocols, ecosystem)
-- [x] Rédiger le README.md principal
-- [ ] Créer le fichier ROADMAP.md détaillé
-- [ ] Configurer Dart pour la gestion de projet
+## Phases du projet
 
-### Étape 1.2: Conception de l'architecture
-- [x] Ébaucher l'architecture technique (docs/architecture.md)
-- [ ] Définir les composants système principaux
-- [ ] Établir les interfaces entre composants
-- [ ] Documenter les flux de données
+### Phase 1: Fondations (Q1 2025)
 
-### Étape 1.3: Cartographie de l'écosystème
-- [ ] Compléter le template de cartographie avec les outils IA actuels
-- [ ] Identifier les intégrations prioritaires
-- [ ] Analyser les forces et faiblesses de chaque outil
-- [ ] Établir une matrice de compatibilité
+Cette phase établit les bases conceptuelles et techniques du projet.
 
-## Phase 2: Développement des protocoles (Semaines 4-8)
-Affiner et implémenter les protocoles fondamentaux du système.
+#### Étapes:
+1. **Documentation initiale**
+   - [x] Créer le README.md principal
+   - [x] Établir la structure des dossiers
+   - [x] Initialiser les documents de protocole
 
-### Étape 2.1: Protocole de mémoire
-- [x] Ébaucher le protocole de mémoire (protocols/memory_protocol.md)
-- [ ] Définir les schémas JSON pour le système de mémoire
-- [ ] Développer le mécanisme de stockage
-- [ ] Implémenter la hiérarchisation des souvenirs
-- [ ] Créer les fonctions d'accès et de récupération
+2. **Conception de l'architecture**
+   - [ ] Finaliser le document d'architecture technique
+   - [ ] Définir les interfaces entre composants
+   - [ ] Établir les standards de développement
 
-### Étape 2.2: Protocole d'orchestration IA
-- [x] Ébaucher le protocole d'orchestration (protocols/ia_orchestration.md)
-- [ ] Développer le mécanisme de sélection d'agent
-- [ ] Implémenter le système de passage de contexte
-- [ ] Créer les interfaces d'API universelles
-- [ ] Tester avec au moins deux modèles d'IA différents
+3. **Système de mémoire - Conception**
+   - [ ] Définir la structure de données du système de mémoire
+   - [ ] Créer les schémas JSON pour les différents types de mémoire
+   - [ ] Établir les protocoles d'accès et de filtrage
 
-### Étape 2.3: Directives d'autonomie
-- [x] Ébaucher les directives d'autonomie (protocols/autonomy_guidelines.md)
-- [ ] Développer le système de prise de décision
-- [ ] Définir les niveaux d'autonomie
-- [ ] Implémenter les mécanismes de sécurité
-- [ ] Créer un journal d'audit des décisions
+### Phase 2: Développement MVP (Q2 2025)
 
-## Phase 3: Intégration et tests (Semaines 9-12)
-Connecter les différents composants et tester le système.
+Cette phase se concentre sur le développement d'un MVP (Minimum Viable Product) fonctionnel.
 
-### Étape 3.1: Intégration des composants
-- [ ] Connecter le système de mémoire aux agents IA
-- [ ] Intégrer le mécanisme d'orchestration
-- [ ] Développer l'interface utilisateur de base
-- [ ] Établir les pipelines de logging et monitoring
+#### Étapes:
+1. **Implémentation du système de mémoire**
+   - [ ] Développer les API de base pour la gestion de la mémoire
+   - [ ] Créer la couche de persistance
+   - [ ] Implémenter les filtres et les mécanismes de requête
 
-### Étape 3.2: Tests unitaires et d'intégration
-- [ ] Développer une suite de tests unitaires
-- [ ] Créer des scénarios de test d'intégration
-- [ ] Tester les performances du système de mémoire
-- [ ] Valider le comportement autonome dans divers scénarios
+2. **Orchestration des IA - Base**
+   - [ ] Développer le gestionnaire central d'orchestration
+   - [ ] Implémenter les connecteurs pour 2-3 modèles d'IA initiaux
+   - [ ] Créer les mécanismes de routage des requêtes
 
-### Étape 3.3: Documentation technique
-- [ ] Compléter la documentation d'architecture
-- [ ] Rédiger les guides d'intégration
-- [ ] Créer des tutoriels pour les développeurs
-- [ ] Documenter les API et les protocoles
+3. **Interface utilisateur minimale**
+   - [ ] Développer une interface en ligne de commande
+   - [ ] Créer un tableau de bord web basique
+   - [ ] Implémenter les outils de debug et monitoring
 
-## Phase 4: Déploiement et optimisation (Semaines 13-16)
-Lancer le système et l'optimiser en fonction du feedback.
+### Phase 3: Extension et robustesse (Q3 2025)
 
-### Étape 4.1: Déploiement initial
-- [ ] Préparer l'environnement de production
-- [ ] Configurer le monitoring et les alertes
-- [ ] Effectuer un déploiement contrôlé
-- [ ] Établir un processus de feedback
+Cette phase vise à étendre les fonctionnalités et à améliorer la robustesse du système.
 
-### Étape 4.2: Optimisation des performances
-- [ ] Analyser les goulots d'étranglement
-- [ ] Optimiser le système de mémoire
-- [ ] Améliorer les performances d'orchestration
-- [ ] Réduire la latence globale du système
+#### Étapes:
+1. **Amélioration du système de mémoire**
+   - [ ] Ajouter la gestion des contextes et des espaces de mémoire
+   - [ ] Implémenter des mécanismes d'oubli sélectif
+   - [ ] Optimiser les performances d'accès
 
-### Étape 4.3: Évolution et roadmap future
-- [ ] Recueillir le feedback des utilisateurs
-- [ ] Identifier les fonctionnalités prioritaires
-- [ ] Planifier la prochaine phase de développement
-- [ ] Établir des partenariats stratégiques
+2. **Extension de l'orchestration**
+   - [ ] Ajouter le support pour 5+ modèles d'IA supplémentaires
+   - [ ] Implémenter des politiques d'autonomie avancées
+   - [ ] Développer des mécanismes d'auto-apprentissage
+
+3. **Interface utilisateur avancée**
+   - [ ] Créer un tableau de bord complet et personnalisable
+   - [ ] Ajouter des visualisations des flux de travail
+   - [ ] Développer des outils d'analyse des interactions
+
+### Phase 4: Déploiement et écosystème (Q4 2025)
+
+Cette phase se concentre sur le déploiement à grande échelle et l'intégration avec l'écosystème existant.
+
+#### Étapes:
+1. **Déploiement**
+   - [ ] Finaliser la documentation de déploiement
+   - [ ] Créer des outils de migration et d'installation
+   - [ ] Établir des procédures de mise à jour et maintenance
+
+2. **Intégration écosystème**
+   - [ ] Développer des connecteurs pour les outils tiers populaires
+   - [ ] Créer des API publiques pour extensions
+   - [ ] Documenter les processus d'intégration
+
+3. **Communauté et collaboration**
+   - [ ] Établir une documentation complète pour contributeurs
+   - [ ] Créer des exemples et tutoriels
+   - [ ] Développer des outils de collaboration communautaire
+
+## Jalons clés
+
+- **Jalon 1 (Fin Q1 2025)**: Documentation complète et architecture finalisée
+- **Jalon 2 (Mi-Q2 2025)**: MVP fonctionnel avec système de mémoire basique
+- **Jalon 3 (Fin Q2 2025)**: Orchestration d'IA fonctionnelle avec 2-3 modèles
+- **Jalon 4 (Mi-Q3 2025)**: Système de mémoire avancé et interface utilisateur complète
+- **Jalon 5 (Fin Q3 2025)**: Support multi-IA étendu et mécanismes d'autonomie
+- **Jalon 6 (Fin Q4 2025)**: Système complet déployable avec intégration écosystème
+
+## Révisions de la roadmap
+
+Ce document sera revu et mis à jour à la fin de chaque phase, ou plus fréquemment si nécessaire.
+
+---
+
+*Dernière mise à jour: 25 mars 2025*
